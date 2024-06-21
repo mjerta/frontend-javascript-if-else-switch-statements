@@ -38,7 +38,7 @@ switch (errorCode) {
 // Opdracht 2: schrijf een switch statement die op basis van de volgende variabele een bijbehorende foutmelding in de console logt.
 // ==========================================
 
-const monitorColor = "red";
+const monitorColor = "orange";
 
 // Deze variabele zal altijd een kleur bevatten. De specifieke kleuren waar een melding bij gemaakt moet worden zijn: "red", "green", "yellow" en "orange".
 // Deze codes zijn gelinkt aan de volgende meldingen:
@@ -61,6 +61,7 @@ switch (monitorColor) {
     console.log("Hartslag verhoogd");
     break
   case "red":
+  case "orange":
     console.log("Kritieke hartslag, actie vereist!");
     break;
 }
@@ -73,6 +74,6 @@ if (monitorColor === "green") {
   console.log("Hartslag stabiel");
 } else if (monitorColor === "yellow") {
   console.log("Hartslag verhoogd");
-} else if (monitorColor === "red") {
+} else if (monitorColor === "orange" || monitorColor === "red") {
   console.log("Kritieke hartslag, actie vereist!");
 }
